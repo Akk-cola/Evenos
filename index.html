@@ -4,6 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Evenos – Robots that mine for you</title>
+<link rel='icon' type='image/svg+xml' href='favicon.svg'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=Manrope:wght@400;500;700&display=swap'>
 <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
 :root{--bg:#120a24;--bg2:#1c1038;--card:#241447;--ink:#f6f0ff;--mute:#b9a8dd;--line:#3a2468;--p:#8b5cf6;--k:#ff5fc8;--c:#5ee7ff;--grad:linear-gradient(135deg,#8b5cf6,#ff5fc8);
@@ -145,13 +147,54 @@ h1{font-weight:600;letter-spacing:-.035em}h2{font-weight:600;letter-spacing:-.03
 .stop.done::before{background:var(--k)}
 .final{background:linear-gradient(160deg,rgba(124,92,255,.28),rgba(255,79,216,.14));border:1px solid var(--line);border-radius:24px;box-shadow:inset 0 0 90px #7c5cff33}
 .toast{border-radius:12px;border:1px solid var(--k);box-shadow:0 0 30px #ff4fd855}
+html:root:not(#x){--k:#3d8bff;--grad:linear-gradient(120deg,#7c5cff,#3d8bff)}
+.btn,.links .btn{box-shadow:inset 0 0 0 1px #ffffff30,0 8px 32px #5b6cff66}
+.btn:hover{box-shadow:inset 0 0 0 1px #ffffff55,0 10px 40px #3d8bffaa}
+.hero{background:radial-gradient(55% 55% at 78% 30%,#5b6cff44,transparent),radial-gradient(40% 40% at 12% 80%,#3d8bff33,transparent)}
+.stage .ring::after{border-color:#3d8bff77}
+.stage::after{background:radial-gradient(closest-side,#3d8bffaa,#7c5cff44 60%,transparent)}
+.donut{background:conic-gradient(#7c5cff 0 40%,#3d8bff 0 60%,#5ee7ff 0 75%,#a78bfa 0 90%,#38bdf8 0 100%)}
+.final{background:linear-gradient(160deg,rgba(124,92,255,.28),rgba(61,139,255,.16))}
+.toast{box-shadow:0 0 30px #3d8bff55}
 </style>
 </head>
 <body>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
 <defs>
 <linearGradient id="gb" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#a78bfa"/><stop offset="1" stop-color="#ff5fc8"/></linearGradient>
-<symbol id="robot" viewBox="0 0 400 420"><defs>
+<symbol id='robot' viewBox='0 0 400 420'><defs>
+<radialGradient id='mm' cx='.3' cy='.15' r='1'><stop offset='0' stop-color='#8a8fc4'/><stop offset='.45' stop-color='#3c3d66'/><stop offset='1' stop-color='#100f24'/></radialGradient>
+<linearGradient id='md' x1='0' y1='0' x2='0' y2='1'><stop offset='0' stop-color='#2c2c4e'/><stop offset='1' stop-color='#07061a'/></linearGradient>
+<radialGradient id='mg' cx='.4' cy='.35' r='.8'><stop offset='0' stop-color='#fff'/><stop offset='.35' stop-color='#7cc4ff'/><stop offset='1' stop-color='#4a3cf0'/></radialGradient>
+<filter id='mb' x='-60%' y='-60%' width='220%' height='220%'><feGaussianBlur stdDeviation='7'/></filter>
+</defs>
+<g stroke='#8a90e0' stroke-opacity='.45' stroke-width='2' stroke-linejoin='round'>
+<ellipse cx='200' cy='404' rx='125' ry='13' fill='#000' opacity='.55' stroke='none'/>
+<path d='M138 340H196L192 394H126Z' fill='url(#md)'/><path d='M204 340H262L274 394H208Z' fill='url(#md)'/>
+<rect x='170' y='216' width='60' height='30' rx='6' fill='url(#md)'/>
+<rect x='66' y='272' width='44' height='76' rx='14' fill='url(#md)'/><rect x='290' y='272' width='44' height='76' rx='14' fill='url(#md)'/>
+<rect x='60' y='340' width='56' height='44' rx='14' fill='url(#mm)'/><rect x='284' y='340' width='56' height='44' rx='14' fill='url(#mm)'/>
+<path d='M110 236h180l-26 118H136z' fill='url(#mm)'/>
+<path d='M54 246q4-42 66-36l12 56-70 18z' fill='url(#mm)'/><path d='M346 246q-4-42-66-36l-12 56 70 18z' fill='url(#mm)'/>
+</g>
+<path d='M64 244q10-22 52-24M336 244q-10-22-52-24' stroke='#4da3ff' stroke-width='4' fill='none' stroke-linecap='round'/>
+<path d='M126 262h38M236 262h38M142 330l40-12M258 330l-40-12' stroke='#8b5cf6' stroke-width='3' stroke-linecap='round' opacity='.8'/>
+<polygon points='200,262 226,278 226,310 200,326 174,310 174,278' fill='#4a8bff' filter='url(#mb)' opacity='.85'/>
+<polygon points='200,268 220,280 220,306 200,318 180,306 180,280' fill='url(#mg)' stroke='#cfe6ff' stroke-opacity='.7' stroke-width='2'/>
+<g stroke='#8a90e0' stroke-opacity='.5' stroke-width='2' stroke-linejoin='round'>
+<path d='M106 112L70 70l50 14z' fill='url(#md)'/><path d='M294 112l36-42-50 14z' fill='url(#md)'/><path d='M190 58l10-38 10 38z' fill='url(#mm)'/>
+<path d='M200 56C132 58 104 82 104 122l10 76q16 38 86 42q70-4 86-42l10-76c0-40-28-64-96-66z' fill='url(#mm)'/>
+</g>
+<path d='M114 122q86-26 172 0l-4 14q-82-24-164 0z' fill='#07061a'/>
+<path d='M122 134q78-18 156 0l-8 46q-70 20-140 0z' fill='url(#md)' stroke='#4da3ff' stroke-opacity='.6' stroke-width='2'/>
+<path d='M134 148l54 14-4 16-46-8zM266 148l-54 14 4 16 46-8z' fill='#4da3ff' filter='url(#mb)' opacity='.9'/>
+<path d='M134 148l54 14-4 16-46-8zM266 148l-54 14 4 16 46-8z' fill='url(#mg)'/>
+<path d='M140 152l40 10M260 152l-40 10' stroke='#fff' stroke-width='2' opacity='.9'/>
+<path d='M168 206h64M174 216h52M182 226h36' stroke='#6b72c8' stroke-width='3' stroke-linecap='round' opacity='.75'/>
+<path d='M128 96q44-28 92-26' stroke='#fff' stroke-width='5' fill='none' stroke-linecap='round' opacity='.3'/>
+<path d='M290 130l-8 66q-10 24-40 38' stroke='#4da3ff' stroke-width='5' fill='none' stroke-linecap='round' filter='url(#mb)' opacity='.9'/>
+</symbol>
+<symbol id='robot-v2' viewBox='0 0 400 420'><defs>
 <radialGradient id="sh"><stop offset="0" stop-color="#000" stop-opacity=".5"/><stop offset="1" stop-color="#000" stop-opacity="0"/></radialGradient>
 <radialGradient id="sk" cx=".32" cy=".25" r=".95"><stop offset="0" stop-color="#fff"/><stop offset=".4" stop-color="#e6dcff"/><stop offset=".8" stop-color="#9b86e6"/><stop offset="1" stop-color="#5a46a8"/></radialGradient>
 <radialGradient id="pk" cx=".35" cy=".3" r=".9"><stop offset="0" stop-color="#ffd0f2"/><stop offset=".45" stop-color="#ff5fd0"/><stop offset="1" stop-color="#6a2fd6"/></radialGradient>
@@ -219,25 +262,25 @@ h1{font-weight:600;letter-spacing:-.035em}h2{font-weight:600;letter-spacing:-.03
 <section class="hero"><div class="wrap">
 <div>
 <span class="pill">🤖 Season 1 robots are waking up</span>
-<h1>Little robots that <span class="g">mine tokens</span> for you.</h1>
-<p class="lead">Adopt an Evenos bot, send it on a mining mission, and collect $EVN rewards while you do something else. Friendly, fast and powered by AI.</p>
+<h1>Relentless robots that <span class="g">mine tokens</span> for you.</h1>
+<p class="lead">Adopt an Evenos bot, send it on a mining mission, and collect $EVN rewards while you do something else. Relentless, precise and powered by AI.</p>
 <div class="cta"><a class="btn" href="#join">Adopt your robot</a><a class="btn alt" href="#about">How it works</a></div>
 <div class="stats"><div><b>48K+</b><span>Robots adopted</span></div><div><b>1.2M</b><span>$EVN mined daily</span></div><div><b>99.9%</b><span>Bot uptime</span></div></div>
 </div>
 <div class="stage"><div class="ring"></div>
 <button id="bot" aria-label="Poke the Evenos robot"><svg viewBox="0 0 400 420" role="img" aria-label="Evenos robot mascot"><use href="#robot"/></svg></button>
-<div class="bubble" id="bubble">Hi! Poke me to mine a coin!</div>
+<div class="bubble" id="bubble">Unit online. Awaiting orders.</div>
 <div class="coin c1">E</div><div class="coin c2">E</div><div class="coin c3">E</div>
 </div></div></section>
 
 <section id="about" class="alt-bg"><div class="wrap split">
 <div><h2>Meet the crew behind <span class="g">Evenos</span></h2>
-<p class="lead">We believe mining should feel like playing with a pet, not running a server room. Evenos gives every person a cute robot that does the heavy computing, with AI that picks the best moment and method to mine.</p>
+<p class="lead">We believe mining should be run by machines, not babysat from a server room. Evenos gives every person a cute robot that does the heavy computing, with AI that picks the best moment and method to mine.</p>
 <p class="lead" style="margin-top:14px">No rigs, no cables, no noise. You pick a bot, upgrade its parts, and watch your balance grow.</p></div>
 <div class="grid g2" style="margin:0">
 <div class="card"><div class="ico">🧠</div><h3>AI brain</h3><p>Each bot learns the network and mines when rewards are highest.</p></div>
 <div class="card"><div class="ico">🔋</div><h3>Eco friendly</h3><p>Smart scheduling cuts wasted energy by up to 60%.</p></div>
-<div class="card"><div class="ico">🎮</div><h3>Playful</h3><p>Customize colors, hats and tools for your bot.</p></div>
+<div class="card"><div class="ico">🎮</div><h3>Customizable</h3><p>Tune armor, optics and tools for your bot.</p></div>
 <div class="card"><div class="ico">🔒</div><h3>Safe by design</h3><p>Audited contracts and self-custody wallets.</p></div>
 </div></div></section>
 
@@ -257,10 +300,10 @@ h1{font-weight:600;letter-spacing:-.035em}h2{font-weight:600;letter-spacing:-.03
 <div><h2><span class="g">Tokenomics</span></h2><p class="lead">A fixed supply with most of it reserved for the people who mine.</p>
 <ul class="legend">
 <li><i style="background:#8b5cf6"></i>Mining rewards<span>40%</span></li>
-<li><i style="background:#ff5fc8"></i>Community and ecosystem<span>20%</span></li>
+<li><i style="background:#3d8bff"></i>Community and ecosystem<span>20%</span></li>
 <li><i style="background:#5ee7ff"></i>Treasury<span>15%</span></li>
-<li><i style="background:#ffb35e"></i>Team (24-month vesting)<span>15%</span></li>
-<li><i style="background:#7cf5b0"></i>Liquidity<span>10%</span></li>
+<li><i style="background:#a78bfa"></i>Team (24-month vesting)<span>15%</span></li>
+<li><i style="background:#38bdf8"></i>Liquidity<span>10%</span></li>
 </ul>
 <div class="facts"><b>Ticker: $EVN</b><b>Max supply: 1,000,000,000</b><b>Halving every 12 months</b></div></div>
 </div></section>
@@ -301,7 +344,7 @@ h1{font-weight:600;letter-spacing:-.035em}h2{font-weight:600;letter-spacing:-.03
 
 <footer><div class="wrap">
 <div class="fgrid">
-<div><a href="#top" class="logo"><svg viewBox="0 0 400 420"><use href="#robot"/></svg><span class="g">Evenos</span></a><p class="lead" style="margin-top:12px;font-size:.95rem">Cute robots. Real mining. A friendlier way into crypto.</p></div>
+<div><a href="#top" class="logo"><svg viewBox="0 0 400 420"><use href="#robot"/></svg><span class="g">Evenos</span></a><p class="lead" style="margin-top:12px;font-size:.95rem">Autonomous robots. Real mining. Built for the long game.</p></div>
 <div><h4>Product</h4><ul><li><a href="#services">Services</a></li><li><a href="#tokenomics">Tokenomics</a></li><li><a href="#roadmap">Roadmap</a></li></ul></div>
 <div><h4>Company</h4><ul><li><a href="#about">About</a></li><li><a href="#faq">Q&amp;A</a></li><li><a href="#join">Waitlist</a></li></ul></div>
 <div><h4>Community</h4><ul><li><a href="#" data-toast="Discord link coming soon">Discord</a></li><li><a href="#" data-toast="Telegram link coming soon">Telegram</a></li><li><a href="#" data-toast="X link coming soon">X (Twitter)</a></li></ul></div>
@@ -316,7 +359,7 @@ burger.onclick=()=>{const o=links.classList.toggle('open');burger.setAttribute('
 links.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{links.classList.remove('open');burger.textContent='☰';burger.setAttribute('aria-expanded',false)}));
 let tt;function say(m){toast.textContent=m;toast.classList.add('show');clearTimeout(tt);tt=setTimeout(()=>toast.classList.remove('show'),2600)}
 document.querySelectorAll('[data-toast]').forEach(a=>a.addEventListener('click',e=>{if(a.getAttribute('href')==='#')e.preventDefault();say(a.dataset.toast)}));
-let n=0;const msgs=['Beep boop! +1 $EVN','Mining… so shiny!','Wheee! +1 $EVN','Hehe, that tickles!'];
+let n=0;const msgs=['Extraction complete. +1 $EVN','Target locked. Mining…','Power rising. +1 $EVN','Do not interrupt the unit.'];
 $('#bot').onclick=()=>{n++;const b=$('#bot');b.classList.remove('hop');void b.offsetWidth;b.classList.add('hop');$('#bubble').textContent=msgs[n%msgs.length]+' ('+n+' mined)'};
 </script>
 </body>
